@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Nemo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#"><span>Global</span> Solution</a></h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucao">Solução</a></li>
+                <li><a href="#desenvolvedores">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+        <div class="menu_mobile">
+            <label class="menu__btn" id="menuButton" onclick="showMenu()">
+                <span></span>
+            </label>
+            <ul class="menu__box" id="menuBox">
+                <li><a href="#problema" class="menu__item">Problema</a></li>
+                <li><a href="#solucao" class="menu__item">Solução</a></li>
+                <li><a href="#desenvolvedores" class="menu__item">Desenvolvedores</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="principal">
+            <div class="conteudo">
+                <h1>Contra a Pesca Ilegal nos Oceanos</h1>
+                <div>
+                    <p>Proteja a vida marinha e preserve nossos oceanos. Junte-se a nós na luta contra a pesca ilegal!</p>
+                    <button onclick="document.getElementById('problema').scrollIntoView({ behavior: 'smooth' });">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+        <div id="problema">
+            <div class="conteudo">
+                <h1>Problema</h1>
+            </div>
+
+        </div>
+        <div id="solucao">
+            <h1>SOLUCAO</h1>
+
+        </div>
+        <div id="desenvolvedores">
+            <h2>Desenvolvedores</h2>
+            <div class="conteudo">
+                <div class="card">
+                    <img src="image/dev/arthur.png" alt="">
+                    <div class="texto">
+                        <h3>Arthur Chacon Garcia Spedine</h3>
+                        <p>RM: 554489</p>
+                        <p><a href="#">github</a></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="image/dev/pedro.jpeg" alt="">
+                    <div class="texto">
+                        <h3>Pedro Henrique dos Santos</h3>
+                        <p>RM: 559064</p>
+                        <p><a href="#">github</a></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="image/dev/vinicius.png" alt="">
+                    <div class="texto">
+                        <h3>Vinícius de Oliveira Coutinho</h3>
+                        <p>RM: ######</p>
+                        <p><a href="#">github</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>GLOBAL</footer>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>
