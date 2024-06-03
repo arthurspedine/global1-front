@@ -42,7 +42,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 25px;
+    padding: 15px 40px;
     font-size: 1.15rem;
     max-height: 76px;
     position: fixed;
@@ -79,6 +79,7 @@ nav ul li a {
     height: 26px;
     cursor: pointer;
     z-index: 1;
+    margin-right: -15px;
 }
 
 #menuButton>span,
@@ -250,13 +251,12 @@ main>div p {
 #problema .conteudo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
     width: 80%;
     margin: 25px auto;
 }
 
 #problema .conteudo .box {
-    padding: 20px;
+    padding: 20px 20px 0;
     width: 100%;
 }
 
@@ -281,8 +281,40 @@ main>div p {
     margin: auto;
 }
 
-#solucao .conteudo {
+/* SOLUCAO */
 
+#solucao .conteudo {
+    display: flex;
+    align-items: start;
+    width: 80%;
+    flex-direction: column;
+    margin: 25px auto;
+}
+
+#solucao .texto {
+    width: 100%;
+    padding: 0 30px 0 0;
+}
+
+#solucao .imagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 17px;
+    padding: 25px;
+}
+
+#solucao .imagem img {
+    width: 700px;
+    /* height: 300px; */
+}
+
+#solucao .imagem p {
+    font-size: 0.9rem;
+    text-indent: 0;
+    text-align: center;
+    line-height: 0.9;
 }
 
 /* DESENVOLVEDORES */
@@ -338,8 +370,6 @@ main>div p {
     width: 28px;
     height: 28px;
 }
-
-
 
 footer {
     display: flex;
