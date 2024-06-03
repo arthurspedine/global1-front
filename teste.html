@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
-
         .menu_mobile {
             display: none;
         }
@@ -103,6 +102,38 @@
                 right: 0 !important;
             }
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Define 3 colunas iguais */
+            gap: 10px;
+            /* Espaçamento entre os boxes */
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .box {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-column: span 2;
+            /* Ocupa 2 colunas */
+        }
+
+        .box2 {
+            grid-column: span 1;
+            /* Ocupa 1 coluna */
+        }
+
+        .box3 {
+            grid-column: span 1;
+            /* Ocupa 1 coluna */
+        }
     </style>
 </head>
 
@@ -132,14 +163,23 @@
             <div class="conteudo">
                 <h1>Contra a Pesca Ilegal nos Oceanos</h1>
                 <div>
-                    <p>Proteja a vida marinha e preserve nossos oceanos. Junte-se a nós na luta contra a pesca ilegal!</p>
-                    <button onclick="document.getElementById('problema').scrollIntoView({ behavior: 'smooth' });">Saiba Mais</button>
+                    <p>Proteja a vida marinha e preserve nossos oceanos. Junte-se a nós na luta contra a pesca ilegal!
+                    </p>
+                    <button onclick="document.getElementById('problema').scrollIntoView({ behavior: 'smooth' });">Saiba
+                        Mais</button>
                 </div>
             </div>
         </div>
         <div id="problema">
             <h1>PROBLEMA</h1>
             <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+        <div class="a">
+            <div class="grid-container">
+                <div class="box box1">Box 1</div>
+                <div class="box box2">Box 2</div>
+                <div class="box box3">Box 3</div>
+            </div>
         </div>
     </main>
 

@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     flex-grow: 1;
     overflow-x: hidden;
+    line-height: 1.6;
 }
 
 span {
@@ -159,7 +160,29 @@ nav ul li a {
 main>div {
     min-height: 100vh;
     width: 100%;
+
+    padding: 3% 4%;
+    text-align: center;
 }
+
+main>div h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
+        2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+main>div p {
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    text-align: left;
+    text-indent: 40px;
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* PRINCIPAL */
 
 #principal {
     background: url("/image/bg.jpg") center center / cover no-repeat;
@@ -196,10 +219,6 @@ main>div {
     height: 100%;
 }
 
-#principal .conteudo div p {
-    word-spacing: 7px;
-}
-
 #principal .conteudo div button {
     width: 160px;
     height: 45px;
@@ -212,9 +231,10 @@ main>div {
     cursor: pointer;
 }
 
+/* CORES */
+
 #problema {
     background: linear-gradient(to bottom, #000, #1D2E61);
-    padding: 6% 4%;
 }
 
 #solucao {
@@ -223,16 +243,49 @@ main>div {
 
 #desenvolvedores {
     background: linear-gradient(to bottom, #000, #1D2E61);
-    padding: 8% 4%;
-    text-align: center;
 }
 
-#desenvolvedores h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
-        2px 2px 10px rgba(255, 255, 255, 0.2);
+/* PROBLEMA */
+
+#problema .conteudo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    width: 80%;
+    margin: 25px auto;
 }
+
+#problema .conteudo .box {
+    padding: 20px;
+    width: 100%;
+}
+
+.box1 {
+    grid-column: span 2;
+}
+
+.box2 {
+    grid-column: span 1;
+    width: 60%;
+}
+
+.box3 {
+    grid-column: span 1;
+    width: 40%;
+    margin: auto;
+}
+
+#problema .conteudo img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+#solucao .conteudo {
+
+}
+
+/* DESENVOLVEDORES */
 
 #desenvolvedores .conteudo {
     display: grid;
@@ -240,7 +293,7 @@ main>div {
     justify-content: center;
     align-self: center;
     justify-items: center;
-    padding: 3%;
+    padding: 5% 0;
     margin: auto;
 }
 
@@ -272,6 +325,18 @@ main>div {
     display: flex;
     flex-direction: column;
     gap: 7px;
+}
+
+.github a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.github img {
+    width: 28px;
+    height: 28px;
 }
 
 
