@@ -249,10 +249,19 @@ main>div p {
 /* PROBLEMA */
 
 #problema .conteudo {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    margin: 25px auto;
+    margin: 0 auto;
+}
+
+#problema .conteudo p span {
+    color: #fff;
+    font-size: 1rem;
+}
+
+#problema .conteudo p a {
+    color: #305DF3;
 }
 
 #problema .conteudo .box {
@@ -260,25 +269,15 @@ main>div p {
     width: 100%;
 }
 
-.box1 {
-    grid-column: span 2;
-}
-
-.box2 {
-    grid-column: span 1;
-    width: 60%;
-}
-
-.box3 {
-    grid-column: span 1;
-    width: 40%;
-    margin: auto;
+#problema .conteudo .box:nth-child(2) {
+    /* float: right; */
 }
 
 #problema .conteudo img {
     width: 300px;
-    display: block;
-    margin: auto;
+    height: 300px;
+    float: right;
+    margin: 0  0 8px 15px;
 }
 
 /* SOLUCAO */
