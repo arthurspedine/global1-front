@@ -234,19 +234,18 @@ main>div p {
 
 /* CORES */
 
-#problema {
+#problema, #solucao, #desenvolvedores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#problema, #desenvolvedores {
     background: linear-gradient(to bottom, #000, #1D2E61);
 }
 
 #solucao {
     background: linear-gradient(to bottom, #1D2E61, #000);
-}
-
-#desenvolvedores {
-    background: linear-gradient(to bottom, #000, #1D2E61);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* PROBLEMA */
@@ -314,7 +313,6 @@ main>div p {
 
 #solucao .imagem img {
     width: 700px;
-    /* height: 300px; */
 }
 
 #solucao .imagem p {
