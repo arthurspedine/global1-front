@@ -234,13 +234,16 @@ main>div p {
 
 /* CORES */
 
-#problema, #solucao, #desenvolvedores {
+#problema,
+#solucao,
+#desenvolvedores {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#problema, #desenvolvedores {
+#problema,
+#desenvolvedores {
     background: linear-gradient(to bottom, #000, #1D2E61);
 }
 
@@ -275,7 +278,7 @@ main>div p {
     width: 600px;
     height: auto;
     float: right;
-    margin: 0  0 8px 15px;
+    margin: 0 0 8px 15px;
 }
 
 #problema .conteudo .img {
@@ -291,15 +294,14 @@ main>div p {
 
 #solucao .conteudo {
     display: flex;
-    align-items: start;
-    width: 80%;
     flex-direction: column;
-    margin: 25px auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 #solucao .texto {
     width: 100%;
-    padding: 0 30px 0 0;
 }
 
 #solucao .imagem {
@@ -366,6 +368,8 @@ main>div p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 0.2s ease, transform 0.2s ease;
+    transform-origin: center;
     gap: 4px;
 }
 
@@ -376,12 +380,34 @@ main>div p {
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: cornflowerblue;
-    padding: 15px;
+    background-color: #111725;
     width: 100%;
 }
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+}
+
+footer .sobrenos {
+    background-color: #172448;
+    width: 100%;
+    justify-content: space-between;
+    height: 100px;
+}
+
+/* ANIMACOES */
+
+.github a:hover {
+    transform: scale(1.1);
+    color: #405EB2;
+}
+
 
 @media screen and (max-width: 1200px) {
     .menu {
