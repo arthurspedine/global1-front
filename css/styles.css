@@ -1,235 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    list-style: none;
-    scroll-behavior: smooth;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
 
-    color: #fff;
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
-    background-color: #1D2E61;
-    width: 8px;
+  background-color: #1d2e61;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #305DF3;
+  border-radius: 10px;
+  background-color: #305df3;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    overflow-x: hidden;
-    line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-x: hidden;
+  line-height: 1.8;
 }
 
 span {
-    color: #305DF3;
+  color: #305df3;
 }
 
 /* HEADER */
 
 header {
-    min-height: 40px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    font-size: 1.15rem;
-    max-height: 76px;
-    position: fixed;
-    background: linear-gradient(to bottom, #000, transparent);
+  min-height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-size: 1.15rem;
+  max-height: 76px;
+  position: fixed;
+  background: linear-gradient(to bottom, #000, transparent);
 }
 
 header h1 a {
-    color: white;
-    font-size: 2.1rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
-        2px 2px 10px rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
+    2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
 nav ul {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 nav ul li a {
-    cursor: pointer;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
-        2px 2px 10px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
+    2px 2px 10px rgba(255, 255, 255, 0.7);
 }
 
 /* MENU HAMBURGUER */
 .menu_mobile {
-    display: none;
+  display: none;
+  align-items: center;
+  margin: 32px 15px 0 0;
 }
 
 #menuButton {
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 1;
-    margin-right: -15px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  margin-right: -15px;
 }
 
-#menuButton>span,
-#menuButton>span::before,
-#menuButton>span::after {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 3px;
-    background-color: #ffffff;
-    transition-duration: .25s;
+#menuButton > span,
+#menuButton > span::before,
+#menuButton > span::after {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition-duration: 0.25s;
 }
 
-#menuButton>span::before,
-#menuButton>span::after {
-    content: '';
-    position: absolute;
+#menuButton > span::before,
+#menuButton > span::after {
+  content: "";
+  position: absolute;
 }
 
-#menuButton>span::before {
-    top: -8px;
+#menuButton > span::before {
+  top: -8px;
 }
 
-#menuButton>span::after {
-    top: 8px;
+#menuButton > span::after {
+  top: 8px;
 }
 
 .menu__box {
-    display: block;
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    margin-right: 40px;
-    width: auto;
-    height: auto;
-    background-color: black;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
+  display: block;
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  margin-right: 40px;
+  width: auto;
+  height: auto;
+  background-color: black;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
 }
 
 .menu__item {
-    display: block;
-    margin-bottom: 1px;
-    padding: 12px 24px;
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-    background-color: #375098;
-    color: #fff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 12px 24px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  background-color: #375098;
+  color: #fff;
 }
 
 .menu__item:hover {
-    background-color: #243974;
+  background-color: #243974;
 }
 
-.menu_open #menuButton>span {
-    transform: rotate(-45deg);
+.menu_open #menuButton > span {
+  transform: rotate(-45deg);
 }
 
-.menu_open #menuButton>span::before {
-    top: 0;
-    transform: rotate(0deg);
+.menu_open #menuButton > span::before {
+  top: 0;
+  transform: rotate(0deg);
 }
 
-.menu_open #menuButton>span::after {
-    top: 0;
-    transform: rotate(-90deg);
+.menu_open #menuButton > span::after {
+  top: 0;
+  transform: rotate(-90deg);
 }
 
 .menu_open #menuBox {
-    right: 0 !important;
+  right: 0 !important;
 }
-
 
 /* MAIN */
 
-main>div {
-    min-height: 100vh;
-    width: 100%;
+main > div {
+  min-height: 100vh;
+  width: 100%;
 
-    padding: 3% 4%;
-    text-align: center;
+  padding: 3% 4%;
+  text-align: center;
 }
 
-main>div h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
-        2px 2px 10px rgba(255, 255, 255, 0.2);
+main > div h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
+    2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
-main>div p {
-    font-size: 1.15rem;
-    font-weight: 400;
+main > div p {
+  font-size: 1.15rem;
+  font-weight: 400;
 
-    text-align: left;
-    text-indent: 40px;
-    word-spacing: 5px;
-    letter-spacing: 0.5px;
+  text-align: left;
+  text-indent: 40px;
+  word-spacing: 5px;
+  letter-spacing: 0.5px;
 }
 
 /* PRINCIPAL */
 
 #principal {
-    background: url("/image/bg.jpg") center center / cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: url("/image/bg.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #principal .conteudo {
-    background-color: rgba(000, 000, 000, 0.8);
-    border-top-right-radius: 70px;
-    max-width: 780px;
-    height: 400px;
+  background-color: rgba(000, 000, 000, 0.8);
+  border-top-right-radius: 70px;
+  max-width: 780px;
+  height: 400px;
 
-    padding: 30px 20px;
-    color: #fff;
+  padding: 30px 20px;
+  color: #fff;
 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #principal .conteudo h1 {
-    font-size: 2.7rem;
+  font-size: 2.7rem;
 }
 
 #principal .conteudo div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5% 18%;
-    font-size: 1.4rem;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 18%;
+  font-size: 1.4rem;
+  height: 100%;
 }
 
 #principal .conteudo div button {
-    width: 160px;
-    height: 45px;
-    border: none;
-    border-radius: 15px;
-    background-color: #305DF3;
-    color: #fff;
-    font-size: 1.15rem;
+  width: 160px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  background-color: #305df3;
+  color: #fff;
+  font-size: 1.15rem;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* CORES */
@@ -237,48 +238,41 @@ main>div p {
 #problema,
 #solucao,
 #desenvolvedores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #problema,
 #desenvolvedores {
-    background: linear-gradient(to bottom, #000, #1D2E61);
+  background: linear-gradient(to bottom, #000, #1d2e61);
 }
 
 #solucao {
-    background: linear-gradient(to bottom, #1D2E61, #000);
+  background: linear-gradient(to bottom, #1d2e61, #000);
 }
 
 /* PROBLEMA */
 
 #problema .conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #problema .conteudo p span {
-    color: #fff;
-    font-size: 1rem;
+  color: #fff;
+  font-size: 1rem;
 }
 
 #problema .conteudo p a {
-    color: #305DF3;
+  color: #305df3;
 }
 
 #problema .conteudo .box {
-    padding: 0 20px;
-    width: 100%;
-}
-
-#problema .conteudo img {
-    width: 600px;
-    height: auto;
-    float: right;
-    margin: 0 0 8px 15px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 #problema .conteudo .img {
@@ -290,133 +284,144 @@ main>div p {
     text-align: center;
 }
 
+#problema .conteudo .img img {
+  width: 600px;
+  height: auto;
+  margin: 0 0 8px 15px;
+}
+
 /* SOLUCAO */
 
 #solucao .conteudo {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 #solucao .texto {
-    width: 100%;
+  width: 100%;
 }
 
 #solucao .imagem {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 17px;
-    padding: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  gap: 17px;
+  padding: 25px;
 }
 
 #solucao .imagem img {
-    width: 700px;
+  width: 700px;
+  margin: auto;
 }
 
 #solucao .imagem p {
-    font-size: 0.9rem;
-    text-indent: 0;
-    text-align: center;
-    line-height: 0.9;
+  font-size: 0.9rem;
+  text-indent: 0;
+  text-align: center;
+  line-height: 0.9;
 }
 
 /* DESENVOLVEDORES */
 
 #desenvolvedores .conteudo {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(140px, 1fr));
-    padding: 5% 0;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  padding: 5% 0;
+  margin: auto;
 }
 
 .card {
-    /* CONFIG */
-    width: 300px;
-    height: 389px;
-    border-radius: 30px;
-    background: #212121;
-    box-shadow: 2px 2px 3px rgb(25, 25, 25),
-        -3px -3px 20px rgb(60, 60, 60);
+  /* CONFIG */
+  width: 300px;
+  height: 389px;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 2px 2px 3px rgb(25, 25, 25), -3px -3px 20px rgb(60, 60, 60);
 
-    /* INFO */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 30px 0;
-    margin: 0 40px;
+  /* INFO */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
+  margin: 0 40px;
 }
 
 .card img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
 .card .texto {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.card .texto h3 {
+  word-spacing: 3px;
+  font-weight: 500;
 }
 
 .github a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.2s ease, transform 0.2s ease;
-    transform-origin: center;
-    gap: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+  transform-origin: center;
+  gap: 4px;
 }
 
 .github img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
+/* FOOTER */
+
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #111725;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111725;
+  width: 100%;
 }
 
 footer div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
 }
 
 footer .sobrenos {
-    background-color: #172448;
-    width: 100%;
-    justify-content: space-between;
-    height: 100px;
+  background-color: #172448;
+  width: 100%;
+  justify-content: space-between;
+  height: 100px;
 }
 
 /* ANIMACOES */
 
 .github a:hover {
-    transform: scale(1.1);
-    color: #405EB2;
+  transform: scale(1.1);
+  color: #405eb2;
 }
 
-
 @media screen and (max-width: 1200px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 
-    .menu_mobile {
-        display: flex;
-        align-items: center;
-        margin: 32px 15px 0 0;
-    }
+  .menu_mobile {
+    display: flex;
+  }
 }
