@@ -390,13 +390,29 @@ main>div p {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #111725;
   width: 100%;
   min-height: 50px;
   padding: 15px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div p {
+  line-height: 1px;
+  font-size: 0.875rem;
+}
+
+footer div img {
+  width: 32px;
 }
 
 /* ANIMACOES */
