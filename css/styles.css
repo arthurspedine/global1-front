@@ -169,7 +169,7 @@ main>div {
   text-align: center;
 }
 
-main>div h2 {
+main>div h2, fieldset legend {
   font-size: 2rem;
   font-weight: 600;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9),
@@ -250,7 +250,7 @@ main>div p {
   background: linear-gradient(to bottom, #000, #1d2e61);
 }
 
-#solucao {
+#solucao, #contato {
   background: linear-gradient(to bottom, #1d2e61, #000);
 }
 
@@ -384,6 +384,82 @@ main>div p {
 .github img {
   width: 28px;
   height: 28px;
+}
+
+/* CONTATO */
+#contato .conteudo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contato .conteudo fieldset {
+  padding: 15px 0;
+  width: 500px;
+  height: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid #111725;
+  background-color: #1d2e61;
+}
+
+#contato .conteudo fieldset .input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+fieldset .input input {
+  padding: 3px;
+  height: 40px;
+  color: black;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid #111725;
+}
+
+fieldset .input textarea {
+  padding: 3px;
+  border-radius: 7px;
+  outline: none;
+  color: black;
+  border: 2px solid #111725;
+}
+
+fieldset button {
+  border: none;
+  height: 50px;
+  padding: 5px 15px;
+  background-color: #111725;
+  border-radius: 5px;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+fieldset .input p {
+  visibility: hidden;
+  text-indent: 0;
+  line-height: 0;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: red;
+}
+
+fieldset .erro input, fieldset .erro textarea {
+  border: 1px solid red;
+}
+
+fieldset .erro p {
+  visibility: visible;
+}
+
+input:focus, textarea:focus {
+  border: none;
+  border: 2px solid #305df3;
 }
 
 /* FOOTER */
@@ -526,6 +602,14 @@ footer div img {
   #solucao .conteudo .imagem img {
     width: 340px;
   }
+
+  #contato .conteudo fieldset { 
+    width: 390px;
+  }
+
+  fieldset .input p {
+    font-size: 0.875rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -539,5 +623,9 @@ footer div img {
 
   #problema .conteudo, #solucao .conteudo {
     padding: 0;
+  }
+
+  #contato .conteudo fieldset { 
+    width: 320px;
   }
 }
